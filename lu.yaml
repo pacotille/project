@@ -1,0 +1,27 @@
+project: lu
+version: 1
+env:
+  tmp: ./tmp_path
+  mode: verbose
+tasks:
+  load:
+    matrix: example/nd6k/nd6k.mtx
+    mode: verbose
+  reorder:
+    algo: Dick CPU
+    mode: verbose
+    out:
+      path: ./tmp_path/out.txt
+      format: text
+  pre:
+    algo: Trivial CPU
+    mode: verbose
+    out:
+      path: ./tmp_path/out.txt
+      format: text
+  solve:
+    algo: Trivial CPU
+    mode: verbose
+    out:
+      path: ./tmp_path/sol.txt
+      format: text
