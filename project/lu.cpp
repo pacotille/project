@@ -10,24 +10,6 @@
 #include <pthread.h>
 #include <stdint.h>
 #include <assert.h> 
-/*
-#include <gsl/gsl_linalg.h>
-#include "thpool.h"
-#include "matrix.h"
-#include "matrix-test.h"
-#include "lu-basic.h"
-#include "lu-basic-test.h"
-#include "lu-optim-test.h"
-#include "lu-mt-test.h"
-#include "lu-gsl-test.h"
-#include "read-write-matrix.h"
-#include "queue-test.h"
-#include "reorder.h"
-#include "reorder-test.h"
-#include "lu-help.h"
-#include "settings.h"
-#include "read-settings.h"
-*/
 #include "lu-read-settings.h"
 #include "Yaml.hpp"
 

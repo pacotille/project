@@ -11,13 +11,13 @@ add_compile_options(
 add_compile_options( "$<$<CONFIG:RELEASE>:-O3;-funroll-loops>" )
 
 
-add_library(projectB ${SOURCES})
+add_library(projectBlib ${SOURCES})
 
-target_include_directories(projectB
+target_include_directories(projectBlib
     PRIVATE
         ${PROJECT_SOURCE_DIR}/include
 )
 
-#install(TARGETS projectB
+#install(TARGETS projectBlib
 #    LIBRARY DESTINATION lib
 #    ARCHIVE DESTINATION lib)

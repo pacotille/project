@@ -11,11 +11,7 @@ add_compile_options( "$<$<CONFIG:RELEASE>:-O3;-funroll-loops>" )
 
 add_executable(projectA ${SOURCES})
 
-target_include_directories(projectA
-    PRIVATE
-        ${PROJECT_SOURCE_DIR}/include
-        ${PROJECT_SOURCE_DIR}/project
-)
+target_include_directories(projectA PRIVATE ${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/project)
 
 install(TARGETS projectA RUNTIME DESTINATION bin)
 

@@ -30,10 +30,10 @@ int lu_read_yaml_settings(const char *name, Settings *settings)
         return 1;
     }
 
-    std::cout << root["data1"].As<std::string>() << std::endl;
-    std::cout << root["data2"].As<std::string>() << std::endl;
-    std::cout << root["data3"].As<std::string>() << std::endl;
-    std::cout << root["data4"].As<std::string>() << std::endl;
+    std::cout << root["project"].As<std::string>() << std::endl;
+    std::cout << root["version"].As<std::string>() << std::endl;
+    std::cout << root["env.tmp"].As<std::string>() << std::endl;
+    std::cout << root["env.mode"].As<std::string>() << std::endl;
     std::cout << root["data5"].As<std::string>() << std::endl;
     std::cout << root["data6"].As<int>(0) << std::endl;
     std::cout << root["data7"].As<float>(0.0f) << std::endl;

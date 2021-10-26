@@ -8,20 +8,20 @@ tasks:
     matrix: example/nd6k/nd6k.mtx
     mode: verbose
   reorder:
-    algo: Dick CPU
+    algo: RDCPU
     mode: verbose
     out:
-      path: ./tmp_path/out.txt
+      path: ./tmp_path/reorder_out.txt
       format: text
   pre:
-    algo: Trivial CPU
+    algo: PTCPU
     mode: verbose
     out:
-      path: ./tmp_path/out.txt
+      path: ./tmp_path/pre_out.txt
       format: text
   solve:
-    algo: Trivial CPU
+    algo: STCPU
     mode: verbose
     out:
-      path: ./tmp_path/sol.txt
+      path: ./tmp_path/solver_out.txt
       format: text
